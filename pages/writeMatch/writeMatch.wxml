@@ -1,0 +1,71 @@
+
+<view style='font-size:14px; margin-left: 5px;'>球队图片（仅限一张）</view>
+<image class='teamIcon' src='{{imageUrl}}' mode='aspectFit' bindtap='bindChooseImage'></image>
+
+
+
+<view class='view-one-line'>
+  <view class='view-title'>队伍名称： </view>
+  <input class='view-input'  type='text' confirm-type='next' maxlength='10' bindblur='bindTeamInput'></input>
+</view>
+
+<view class='content'>
+  <view class='line'></view>
+  <view class='view-one-line'>
+    <view class='view-title'>联 系 人： </view>
+    <input class='view-input' type='text' confirm-type='next' maxlength='10' bindblur='bindContactInput'></input>
+  </view>
+  <view class='line'></view>
+
+  <view class='view-one-line'>
+    <view class='view-title'>联系电话： </view>
+    <input class='view-input' type='number' confirm-type='next' maxlength='11' bindblur='bindPhoneInput'></input>
+  </view>
+
+  <view class='line'></view>
+
+  
+
+  <picker class='areaPicker' style='margin-left: 5px;' bindchange="bindAreaPickerChange" value="{{indexArea}}" range="{{areaArray}}">
+    <view class="picker">  区　　域：{{areaArray[indexArea]}}
+    </view>
+  </picker>
+
+  <view class='line'></view>
+  <view class='view-one-line'>
+    <view class='view-title'>地　　址： </view>
+    <input class='view-input' type='text' confirm-type='next' maxlength='40' bindblur='bindAddressInput'></input>
+  </view>
+  <view class='line'></view>
+
+  <view class='view-one-line'>
+    <view class='view-title'>赛　　制：</view>
+    <picker style='width: 70%' bindchange="bindTypePickerChange" value="{{matchType}}" range="{{typeArray}}">
+      {{typeArray[matchType]}}</picker>
+  </view>
+   <view class='line'></view>
+
+   <view class='view-one-line'>
+    <view class='view-title'>队　　服： </view>
+    <input class='view-input' type='text' confirm-type='next' maxlength='5' bindblur='bindColorsInput'></input>
+  </view>
+  <view class='line'></view>
+
+  <view class='view-one-line'>
+    <view class='view-title'>场 地 费：</view>
+    <picker style='width: 80%' bindchange="bindCostPickerChange" value="{{costIndex}}" range="{{costArray}}">
+      {{costArray[indexCost]}}</picker>
+  </view>
+
+  <view class='line'></view>
+
+  <picker style='margin-left: 5px' mode='date' bindchange="bindDatePickerChange" value="{{watchDate}}" start='{{currentDate}}' end='2030'>
+    日　　期：{{watchDate}}</picker>
+  <view class='line'></view>
+  <picker style='margin-left: 5px' mode='time' bindchange="bindTimePickerChange" value="{{watchTime}}">
+    时　　间：{{watchTime}}</picker>
+  
+  <view class='line'></view>
+
+  <button class='btn' bindtap='bindBtnRelease'>发　布</button>
+</view>

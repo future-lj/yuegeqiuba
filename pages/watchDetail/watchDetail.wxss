@@ -1,0 +1,34 @@
+/* pages/watchDetail/watchDetail.wxss */
+.team{
+  width: 100%;
+  text-align: center;
+ 
+  
+}
+
+.content{
+  font-size: 14px;
+  
+  
+}
+
+.line{
+  width: 100%;
+  height: 1px;
+  background: #CFCFCF;
+  margin-top: 5px;
+  margin-bottom: 5px
+  
+}
+
+.btn{
+  background: #33b6fc;
+  font-size: 14px
+
+}
+
+.teamIcon{
+  align-self: center;
+  width: 100%;
+  height: 200rpx
+}

@@ -1,0 +1,49 @@
+/* pages/writeWatch/writeWatch.wxss */
+
+.team {
+  width: 100%;
+  text-align: center;
+}
+
+.content {
+  font-size: 14px;
+}
+
+.view-one-line {
+  flex-direction: row;
+  display: flex;
+}
+
+.view-input {
+  width: 700rpx；;
+}
+
+.view-title {
+  font-size: 14px;
+  align-self: center;
+  margin-left: 8px;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: #cfcfcf;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.btn {
+  background: #33b6fc;
+  font-size: 14px;
+}
+
+.radio{
+  width: 100%;
+
+}
+
+.teamIcon{
+  align-self: center;
+  width: 100%;
+  height: 200rpx
+}

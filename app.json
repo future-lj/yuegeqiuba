@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/watch/watch",
+    "pages/match/match",
+    "pages/court/court",
+    "pages/watchDetail/watchDetail",
+    "pages/writeWatch/writeWatch",
+    "pages/writeMatch/writeMatch",
+    "pages/matchDetail/matchDetail",
+    "pages/courtDetail/courtDetail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#33b6fc",
+    "navigationBarTitleText": "我们约个球吧",
+    "navigationBarTextStyle":"black"
+    
+  },
+ "tabBar": {
+  "color": "#c0c0c0",
+  "selectedColor": "#fff",
+  "borderStyle": "black",
+  "backgroundColor": "#35495e",
+  "list": [
+    {
+      "text": "约看球",
+      "pagePath": "pages/watch/watch",
+      "iconPath": "images/board.png",
+      "selectedIconPath": "images/board-actived.png"
+    },
+    {
+      "text": "约比赛",
+      "pagePath": "pages/match/match",
+      "iconPath": "images/board.png",
+      "selectedIconPath": "images/board-actived.png"
+    },
+    {
+      "text": "找球场",
+      "pagePath": "pages/court/court",
+      "iconPath": "images/board.png",
+      "selectedIconPath": "images/board-actived.png"
+    }
+  ]
+},"debug":true
+}

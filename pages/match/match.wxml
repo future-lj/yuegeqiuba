@@ -1,0 +1,32 @@
+<view class="section" style=" flex-direction: row;">
+  <picker class='areaPicker' style='' bindchange="bindAreaPickerChange" value="{{indexArea}}" range="{{areaArray}}">
+    <view class="picker">
+    　所在区域：{{areaArray[indexArea]}}
+    </view>
+  </picker>
+  <picker class='typePicker' bindchange="bindTypePickerChange" value="{{indexType}}" range="{{typeArray}}">
+    <view class="picker">
+    　类　型：{{typeArray[indexType]}}
+    </view>
+  </picker>
+
+</view>
+
+<scroll-view scroll-y='true' style='height: 90%;'bindscroll="scroll" bindscrolltolower='lower'>
+  <view wx:for="{{watchList}}"  >
+  <view class='line'></view>
+  <view bindtap='bindToDetail' data-teamname="{{item.teamName}}" data-colors="{{item.colors}}" data-date="{{item.date}}" data-time='{{item.time}}' data-contact='{{item.contact}}' data-phone='{{item.phone}}' data-matchtype='{{item.type}}' data-cost='{{item.cost}}'  data-imageurl='{{item.imageUrl}}' 
+  data-address="{{item.area}}{{item.address}}"  class='scrollContent' >
+    <image class='imageIcon' src="{{item.imageUrl}}" mode='aspectFill'></image>
+    <view class='scrollContent2'>
+      <view>队　　伍：{{item.teamName}}</view>
+      <view>联 系 人：{{item.contact}}</view>
+      <view>时　　间： {{item.date}} {{item.time}}</view>
+      <view>地　　址： {{item.area}}{{item.address}}</view>
+    </view>
+  </view>
+   <view class='line'></view>
+  </view>
+</scroll-view>
+
+<button class='buttom' bindtap='bindToWrite'>发布</button>

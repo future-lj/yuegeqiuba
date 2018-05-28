@@ -1,0 +1,23 @@
+<view style='font-size:14px; margin-left: 5px;'>球队图片:</view>
+<image class='teamIcon' src='{{imageUrl}}' mode='aspectFit' bindtap='bindChooseImage'></image>
+<view class='content'>
+<view style='margin-left: 5px;' class='team'>队　　名：{{teamName}}  </view>
+  <view class='line'></view>
+  <view  style='margin-left: 5px;'> 联 系 人：{{contact}}</view>
+  <view class='line'></view>
+  <view  style='margin-left: 5px;'> 联系电话：{{phone}}</view>
+  <view class='line'></view>
+  <view style='margin-left: 5px;'> 状　　态：{{states}}</view>
+  <view class='line'></view>
+  <view style='margin-left: 5px;'> 赛　　制：{{typeMatch}}</view>
+  <view class='line'></view>
+  <view  style='margin-left: 5px;'>队伍颜色：{{colors}}</view>
+    <view class='line'></view>
+  <view  style='margin-left: 5px;'> 场地费用：{{cost}}</view>
+  <view class='line'></view>
+  <view  style='margin-left: 5px;'> 时　　间：{{date}}</view>
+  <view class='line'></view>
+    <view  style='margin-left: 5px;' >地　　址：{{address}}</view>
+    <view class='line'></view>
+  <button class='btn' bindtap='bindCall'>马上联系</button>
+</view>

@@ -1,0 +1,67 @@
+@import "../lib/weui.wxss";
+
+.section {
+  display: flex;
+}
+
+.areaPicker {
+  width: 50%;
+
+}
+
+.typePicker {
+  width: 50%;
+
+  }
+
+.scrollContent {
+  display: flex;
+ 
+}
+
+.imageIcon{
+ width: 29%;
+ height: 170rpx
+}
+
+.scrollContent2 {
+  display: table;
+  width: 72%;
+  font-size: 14px;
+  margin-left: 3px;
+}
+
+.post {
+  float: right;
+  background-color: #fff;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  border: 0 solid #fff;
+  border-radius: 600rpx;
+  box-shadow: 4px 1px 1px #ccc;
+}
+
+
+.buttom {
+  width: 100rpx;
+  height: 60rpx;
+  background: #fff;
+   position: fixed;
+  text-align: center;
+  font-size: 11px;
+  right: 10rpx; 
+  bottom: 10rpx;
+  
+}
+
+.line{
+  width: 100%;
+  height: 1px;
+  background: #35495e;
+  margin-top: 5px;
+  margin-bottom: 5px
+  
+}
+
+

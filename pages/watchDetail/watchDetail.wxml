@@ -1,0 +1,22 @@
+<view style='font-size:14px; margin-left: 5px;'>球队图片:</view>
+<image class='teamIcon' src='{{imageUrl}}' mode='aspectFit' bindtap='bindChooseImage'></image>
+
+<view class='team'>{{team1}} VS {{team2}} </view>
+<view class='content'>
+  <view class='line'></view>
+  <view  style='margin-left: 5px;'> 联 系 人：{{contact}}</view>
+  <view class='line'></view>
+  <view  style='margin-left: 5px;'> 联系电话：{{phone}}</view>
+  <view class='line'></view>
+  <view style='margin-left: 5px;'> 类　　型：{{typeWatch}}</view>
+  <view class='line'></view>
+  <view  style='margin-left: 5px;'>容纳人数：{{maxPerson}}</view>
+  <view class='line'></view>
+  <view  style='margin-left: 5px;' >地　　址：{{address}}</view>
+  <view class='line'></view>
+  <view  style='margin-left: 5px;'> 时　　间：{{date}}</view>
+  <view class='line'></view>
+  <view  style='margin-left: 5px;'> 备　　注：{{ps}}</view>
+  <view class='line'></view>
+  <button class='btn' bindtap='bindCall'>马上联系</button>
+</view>
